@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Quiz Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-container">
+            <div id="progress-bar" class="progress"></div>
+        </div>
+
+        <div class="quiz-card">
+            <div id="quiz-header">
+                <span id="question-count">Question 1 of 5</span>
+                <h2 id="question-text">Loading question...</h2>
+            </div>
+
+            <div id="answer-options" class="options-grid">
+                </div>
+
+            <div class="footer">
+                <button id="next-btn" class="btn-primary" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h1>Quiz Complete!</h1>
+            <p>Your Final Score:</p>
+            <div id="final-score">0/0</div>
+            <button onclick="location.reload()" class="btn-outline">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
